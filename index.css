@@ -1,0 +1,20 @@
+header {
+background-color: rgba(0, 0, 0, 0.288);
+color: rgb(0, 0, 0);
+font-size: x-large;
+padding-top: 1em;
+}
+
+body {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-image: url(mtbachelor.jpg); 
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+footer {
+    margin-top: 25em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.288);
+}
