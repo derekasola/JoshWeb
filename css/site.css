@@ -24,7 +24,7 @@ nav {
 	right: 0;
 	top: 0;
 	padding: 0 5%;
-	height: 100px;
+	height: 75px;
 	background-color: #bbbbbb;
 }
 nav ul {
@@ -137,7 +137,7 @@ flex-direction: column;
 	color: cadetblue;
 }
 .contactForm {
-	width: 40%;
+	width: 35%;
 	padding: 40px;
 	background: rgb(190, 190, 190);
 }
@@ -150,6 +150,9 @@ flex-direction: column;
 	position: relative;
 	width: 100%;
 	margin-top: 10px;
+}
+.contactForm .inputBox textarea {
+	min-height: 100px;
 }
 .contactForm .inputBox input,
 .contactForm .inputBox textarea {
@@ -235,7 +238,7 @@ flex-direction: column;
 
 	/*ContactPage*/
 	.contact {
-		padding: 50px;
+		padding: 60px;
 	}
 	.container {
 		flex-direction: column;
@@ -245,5 +248,8 @@ flex-direction: column;
 	}
 	.container .contactInfo {
 		width: 100%;
+	}
+	.contactForm {
+		width: 80%;
 	}
 }
