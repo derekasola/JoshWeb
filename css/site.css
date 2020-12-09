@@ -114,6 +114,7 @@ footer ul li {
 /*Home/Landing*/
 body .homeContainer {
 	width: 800px;
+	height: 1000px;
 	background-color: rgb(219, 219, 219);
 }
 .welcomeImage {
@@ -125,9 +126,64 @@ body .homeContainer {
 
 /*Portfolio*/
 body .portfolioContainer {
+	padding-top: 100px;
+	padding-bottom: 50px;
+	min-height: 200px;
 	width: 800px;
 	background-color: rgb(219, 219, 219);
 }
+.portGrid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-content: space-evenly;
+	grid-gap: 50px;
+}
+.portItem {
+	text-align: center;
+}
+.portC1 {
+	text-align: center;
+	position: relative;
+}
+.portC2 {
+	text-align: center;
+	position: relative;
+}
+.portGrid img {
+	width: 200px;
+}
+.portfolioContainer h2 {
+	margin: 0px;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #008CBA;
+  }
+  .overlay .text {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+	text-align: center;
+  }
+.portC2:hover .overlay {
+	opacity: 1;
+  }
+  .portC1:hover .overlay {
+	opacity: 1;
+  }
 
 
 /*Contact*/
@@ -317,14 +373,21 @@ body .aboutContainer {
 
 
 	/*Home*/
-	.homeContainer {
-		width: auto;
+	body .homeContainer {
+		width: 200px;
 	}
 
 
 	/*Portfolio*/
-	.portfolioContainer {
-		width: auto;
+	body .portfolioContainer {
+		width: 100%;
+	}
+	.portGrid {
+		grid-template-columns: auto;
+
+	}
+	.portGrid img {
+		width: 250px;
 	}
 
 
